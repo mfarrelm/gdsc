@@ -6,7 +6,7 @@
 - It is very easy to build Deep Learning model on Tensorflow with its high-level API which is Keras
 
 for example this is the code to build DL model using Keras for MNIST Image Recognition (Sequential API)
-'''python
+```python
 model = tf.keras.models.Sequential([
   tf.keras.layers.Flatten(input_shape=(28, 28, 1)),
   tf.keras.layers.Dense(128,activation='relu'),
@@ -18,9 +18,10 @@ model.compile(
     optimizer=tf.keras.optimizers.Adam(0.001),
     metrics=['accuracy'],
 )
+```
 
-This is the same model using Functional API
-'''python
+-This is the same model using Functional API
+```python
 input_ = tf.keras.Input(input_shape = (28, 28, 1))
 X = tf.keras.layers.Flatten(input_shape=(28, 28, 1))(input_)
 X = tf.keras.layers.Dense(128,activation='relu')(X)
@@ -32,7 +33,7 @@ model.compile(
     optimizer=tf.keras.optimizers.Adam(0.001),
     metrics=['accuracy'],
 )
-'''
+```
 
 - Basically Functional API give us more low-level than Sequential API so it gives more freedom to us to build model architecture (example skip-connection NN cannot be implemented with Sequential API)
 
