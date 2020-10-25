@@ -1,6 +1,9 @@
 ## This repo is used for DSC member recruitment
 # Tensorflow
 
+Muhammad Farrel Mahendra
+13317027
+
 - Tensorflow is open-source Deep Learning library
 - With Tensorflow, we can create DL model for production scale
 - It is very easy to build Deep Learning model on Tensorflow with its high-level API which is Keras
@@ -38,6 +41,6 @@ model.compile(
 - Basically Functional API give us more low-level than Sequential API so it gives more freedom to us to build model architecture (example skip-connection NN cannot be implemented with Sequential API)
 
 - [This Project](https://github.com/Yustira/crowd-counting) is an example of using Tensorflow for Crowd Counting System. It is my team Google Bangkit Final Project
-
+- Google also provides certification for Tensorflow. The detail about certification is [here](https://www.tensorflow.org/certificate). This is my [Tensorflow Developer Certificate](https://www.credential.net/f42e4d1a-9d1a-443c-8294-8ba25c2a4be2)
 
 
